@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h1{
+    font-size: 50px;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    background: url(bg.jpg) no-repeat center center/cover;
+}
+.box{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+.box1{
+    width: 30%;
+}
+.box2{
+    width: 28%;
+}
+.box1 h1{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.box21{
+    padding: 15px 30px;
+    background-color: rgb(83, 13, 129);
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.418);
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+.box22{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.418);
+    border-radius: 8px;
+    padding: 30px;
+    background-color: white;
+}
+input{
+    border: 1px solid rgba(0, 0, 0, 0.253);
+    padding: 15px 12px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 18px;
+}
+.inps{
+    margin-bottom: 18px;
+}
+.inp{
+    position: relative;
+}
+.inp img{
+    display: none;
+    position: absolute;
+    top: 16px;
+    right: 9px;
+    width: 20px;
+}
+.small{
+    display: none;
+    text-align: end;
+    margin-top: 5px;
+    font-size: 14px;
+    color: rgb(212, 41, 41);
+}
+button{
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: rgb(18, 167, 18);
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 179, 15, 0.418);
+}
+.small span{
+    color: rgb(212, 41, 41);
+}
+.small1{
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(77, 77, 77);
+}
+.error{
+    border: 1px solid rgb(212, 41, 41);
+}
+@media screen and (max-width:1141px) {
+    .box1{
+        width: 47%;
+    }
+    .box2{
+        width: 40%;
+    }
+}
+@media screen and (max-width:879px) {
+    .box1{
+        width: 53%;
+    }
+    .box2{
+        width: 42%;
+    }
+}
+@media screen and (max-width:719px) {
+    .box{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .box1{
+        width: 90%;
+        margin-bottom: 4rem;
+    }
+    .box2{
+        width: 70%;
+    }
+}
+@media screen and (max-width:499px) {
+    .box2{
+        width: 90%;
+    }
+}
